@@ -29,7 +29,7 @@ resource "aws_iam_instance_profile" "mkaesz_instance_profile" {
 
 resource "aws_iam_role_policy" "mkaesz_instance_policy" {
   name = "mkaesz_instance_policy"
-  role = aws_iam_role.mkaesz_instance_role.id
+  role = aws_iam_role.mkaesz_tfc_agent_instance_role.id
 
   policy = <<EOF
 {
